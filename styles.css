@@ -21,7 +21,7 @@ a {
     color: white;
     justify-content: center;
     align-items: center;
-    padding-left: 124px;
+    padding-left: 120px;
 }
 
 .header-links {
@@ -31,5 +31,5 @@ a {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 124px;
+    padding-right: 120px;
 }
