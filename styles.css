@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    background-color: #1F2937;
+    text-decoration: none;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.header-logo {
+    display: flex;
+    font-size: 24px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left: 124px;
+}
+
+.header-links {
+    display: flex;
+    flex: 1;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 124px;
+}
