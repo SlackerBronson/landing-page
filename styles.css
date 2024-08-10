@@ -3,10 +3,17 @@
     margin: 0;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     display: flex;
+    flex-wrap: wrap;
     background-color: #1F2937;
     text-decoration: none;
+    flex-direction: column;
 }
 
 a {
@@ -17,19 +24,30 @@ a {
 
 .header-logo {
     display: flex;
+    flex-direction: row;
     font-size: 24px;
     color: white;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding-left: 120px;
+    padding-left: 16px;
 }
 
 .header-links {
     display: flex;
-    flex: 1;
+    flex-direction: row;
     gap: 8px;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 120px;
+    padding-right: 16px;
 }
+
+.footer {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+
