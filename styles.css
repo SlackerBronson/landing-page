@@ -1,7 +1,10 @@
 body {
-  padding-inline: 50px;
   height: 100%;
-  background-color: #1f2937;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a,
@@ -10,6 +13,11 @@ ul {
   list-style-type: none;
   text-decoration: none;
   color: whitesmoke;
+}
+
+.herobutton,
+.signupbutton {
+  font-weight: bolder;
 }
 
 /* HEADER SECTION */
@@ -24,6 +32,7 @@ ul {
   align-content: center;
   flex-wrap: wrap;
   color: whitesmoke;
+  padding-inline: 50px;
 }
 
 .headerlinks {
@@ -37,22 +46,17 @@ ul {
 
 .hero {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   background-color: #1f2937;
   color: whitesmoke;
+  padding-inline: 50px;
+  padding-bottom: 25px;
 }
 
 .text-container {
   width: 600px;
-}
-
-.heroimage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 200px;
 }
 
 .herobutton {
@@ -84,11 +88,9 @@ ul {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  margin-top: 35px;
 }
 
 .biginfo {
-  margin-bottom: 20px;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -97,7 +99,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 100px;
 }
 
 .info-item {
@@ -107,15 +109,66 @@ ul {
 }
 
 .infoimagetext {
-  margin-top: 10px;
-  text-align: center;
+  padding-top: 10px;
+  width: 150px;
 }
 
 /* QUOTE SECTION */
 
 .quote {
-  background-color: slategray;
+  display: flex;
+  background-color: #e5e7eb;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .quoteblock {
+  width: 500px;
+}
+
+.quotename {
+  padding-top: 150px;
+  padding-left: 50px;
+}
+
+/* SIGN UP SECTION */
+
+.signupmain {
+  background-color: white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.signupinner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 750px;
+  background-color: #3882f6;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.signupbutton {
+  border: white solid 2px;
+}
+
+.signupbuttonbounds {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  display: flex;
+  color: white;
+  background-color: #1f2937;
+  justify-content: space-around;
 }
